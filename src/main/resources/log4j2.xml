@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+	<Appenders>
+		<RollingFile name="employee"
+			fileName="logs/EmployeeLog.log"
+			filePattern="logs/$${date:MM-dd-yyyy}/EmployeeLog-%d{MM-dd-yyyy}-%i.log.gz">
+			<PatternLayout>
+				<Pattern>%d [%t] %p %c - %m%n</Pattern>
+			</PatternLayout>
+			<Policies>
+				<OnStartupTriggeringPolicy />
+			</Policies>
+		</RollingFile>
+		<RollingFile name="error" fileName="logs/ErrorLog.log"
+			filePattern="logs/$${date:MM-dd-yyyy}/ErrorLog-%d{MM-dd-yyyy}-%i.log.gz">
+			<PatternLayout>
+				<Pattern>%d [%t] %p %c - %m%n</Pattern>
+			</PatternLayout>
+			<Policies>
+				<OnStartupTriggeringPolicy />
+			</Policies>
+		</RollingFile>
+		<RollingFile name="restaurant"
+			fileName="logs/RestaurantLog.log"
+			filePattern="logs/$${date:MM-dd-yyyy}/RestaurantLog-%d{MM-dd-yyyy}-%i.log.gz">
+			<PatternLayout>
+				<Pattern>%d [%t] %p %c - %m%n</Pattern>
+			</PatternLayout>
+			<Policies>
+				<OnStartupTriggeringPolicy />
+			</Policies>
+		</RollingFile>
+		<RollingFile name="kitchen" fileName="logs/KitchenLog.log"
+			filePattern="logs/$${date:MM-dd-yyyy}/KitchenLog-%d{MM-dd-yyyy}-%i.log.gz">
+			<PatternLayout>
+				<Pattern>%d [%t] %p %c - %m%n</Pattern>
+			</PatternLayout>
+			<Policies>
+				<OnStartupTriggeringPolicy />
+			</Policies>
+		</RollingFile>
+		<RollingFile name="patronDistributor"
+			fileName="logs/PatronDistributorLog.log"
+			filePattern="logs/$${date:MM-dd-yyyy}/PatronDistributorLog-%d{MM-dd-yyyy}-%i.log.gz">
+			<PatternLayout>
+				<Pattern>%d [%t] %p %c - %m%n</Pattern>
+			</PatternLayout>
+			<Policies>
+				<OnStartupTriggeringPolicy />
+			</Policies>
+		</RollingFile>
+		<RollingFile name="patron" fileName="logs/PatronLog.log"
+			filePattern="logs/$${date:MM-dd-yyyy}/PatronLog-%d{MM-dd-yyyy}-%i.log.gz">
+			<PatternLayout>
+				<Pattern>%d [%t] %p %c - %m%n</Pattern>
+			</PatternLayout>
+			<Policies>
+				<OnStartupTriggeringPolicy />
+			</Policies>
+		</RollingFile>
+		<RollingFile name="manager" fileName="logs/ManagerLog.log"
+			filePattern="logs/$${date:MM-dd-yyyy}/ManagerLog-%d{MM-dd-yyyy}-%i.log.gz">
+			<PatternLayout>
+				<Pattern>%d [%t] %p %c - %m%n</Pattern>
+			</PatternLayout>
+			<Policies>
+				<OnStartupTriggeringPolicy />
+			</Policies>
+		</RollingFile>
+		<RollingFile name="accountant"
+			fileName="logs/AccountantLog.log"
+			filePattern="logs/$${date:MM-dd-yyyy}/AccountantLog-%d{MM-dd-yyyy}-%i.log.gz">
+			<PatternLayout>
+				<Pattern>%d [%t] %p %c - %m%n</Pattern>
+			</PatternLayout>
+			<Policies>
+				<OnStartupTriggeringPolicy />
+			</Policies>
+		</RollingFile>
+		<RollingFile name="host" fileName="logs/HostLog.log"
+			filePattern="logs/$${date:MM-dd-yyyy}/HostLog-%d{MM-dd-yyyy}-%i.log.gz">
+			<PatternLayout>
+				<Pattern>%d [%t] %p %c - %m%n</Pattern>
+			</PatternLayout>
+			<Policies>
+				<OnStartupTriggeringPolicy />
+			</Policies>
+		</RollingFile>
+		<RollingFile name="waiter"
+			fileName="logs/WaitStaffLog.log"
+			filePattern="logs/$${date:MM-dd-yyyy}/WaitStaffLog-%d{MM-dd-yyyy}-%i.log.gz">
+			<PatternLayout>
+				<Pattern>%d [%t] %p %c - %m%n</Pattern>
+			</PatternLayout>
+			<Policies>
+				<OnStartupTriggeringPolicy />
+			</Policies>
+		</RollingFile>
+		<RollingFile name="chef" fileName="logs/ChefLog.log"
+			filePattern="logs/$${date:MM-dd-yyyy}/ChefLog-%d{MM-dd-yyyy}-%i.log.gz">
+			<PatternLayout>
+				<Pattern>%d [%t] %p %c - %m%n</Pattern>
+			</PatternLayout>
+			<Policies>
+				<OnStartupTriggeringPolicy />
+			</Policies>
+		</RollingFile>
+		<RollingFile name="receipt" fileName="logs/ReceiptLog.log"
+			filePattern="logs/$${date:MM-dd-yyyy}/ReceiptLog-%d{MM-dd-yyyy}-%i.log.gz">
+			<PatternLayout>
+				<Pattern>%d [%t] %p %c - %m%n</Pattern>
+			</PatternLayout>
+			<Policies>
+				<OnStartupTriggeringPolicy />
+			</Policies>
+		</RollingFile>
+		<RollingFile name="order" fileName="logs/OrderLog.log"
+			filePattern="logs/$${date:MM-dd-yyyy}/OrderLog-%d{MM-dd-yyyy}-%i.log.gz">
+			<PatternLayout>
+				<Pattern>%d [%t] %p %c - %m%n</Pattern>
+			</PatternLayout>
+			<Policies>
+				<OnStartupTriggeringPolicy />
+			</Policies>
+		</RollingFile>
+	</Appenders>
+	<Loggers>
+		<Logger name="error" level="INFO" additivity="false">
+			<AppenderRef ref="error" />
+		</Logger>
+		<Logger name="employee" level="INFO" additivity="false">
+			<AppenderRef ref="employee" />
+		</Logger>
+		<Logger name="restaurant" level="INFO" additivity="false">
+			<AppenderRef ref="restaurant" />
+		</Logger>
+		<Logger name="kitchen" level="INFO" additivity="false">
+			<AppenderRef ref="kitchen" />
+		</Logger>
+		<Logger name="patronDistributor" level="INFO"
+			additivity="false">
+			<AppenderRef ref="patronDistributor" />
+		</Logger>
+		<Logger name="patron" level="INFO" additivity="false">
+			<AppenderRef ref="patron" />
+		</Logger>
+		<Logger name="manager" level="INFO" additivity="false">
+			<AppenderRef ref="manager" />
+		</Logger>
+		<Logger name="accountant" level="INFO" additivity="false">
+			<AppenderRef ref="accountant" />
+		</Logger>
+		<Logger name="host" level="INFO" additivity="false">
+			<AppenderRef ref="host" />
+		</Logger>
+		<Logger name="waiter" level="INFO" additivity="false">
+			<AppenderRef ref="waiter" />
+		</Logger>
+		<Logger name="chef" level="INFO" additivity="false">
+			<AppenderRef ref="chef" />
+		</Logger>
+		<Logger name="receipt" level="INFO" additivity="false">
+			<AppenderRef ref="receipt" />
+		</Logger>
+		<Logger name="order" level="INFO" additivity="false">
+			<AppenderRef ref="order" />
+		</Logger>
+		<Root level="ERROR">
+		</Root>
+	</Loggers>
+</Configuration>
